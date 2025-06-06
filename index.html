@@ -16,32 +16,47 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
 
-      <picture>
+       <picture>
       <!-- Square images for viewports 960px and larger -->
-      <source 
-        media="(min-width: 960px)"
-        srcset="
-          images/square-480.jpg 480w,
-          images/square-960.jpg 960w,
-          images/square-1440.jpg 1440w,
-          images/square-1960.jpg 1920w
-        "
-        sizes="50vw">
+      <source srcset="images/museum-480.jpg ,
+                     images/museum-960.jpg 2x,
+                     images/museum-1440.jpg 3x"
+              media="(min-width: 960px) ">
+      
+      <source srcset="images/museum-640.jpg ,
+                     images/museum-1280.jpg 2x,
+                     images/museum-1920.jpg 3x"
+              media="(min-width: 1280px)">
+      
+      <source srcset="images/museum-800.jpg ,
+                     images/museum-1600.jpg 2x,
+                     images/museum-2400.jpg 3x"
+              media="(max-width: 1599px)">
       
       <!-- Landscape images for viewports smaller than 960px -->
-      <source 
-        srcset="
-          images/landscape-320.jpg 320w,
-          images/landscape-640.jpg 640w,
-          images/landscape-960.jpg 960w,
-          images/landscape-1440.jpg 1440w,
-          images/landscape-1920.jpg 1920w
-        "
-        sizes="100vw">
+      <source srcset="images/landscape-320.jpg ,
+                     images/landscape-640.jpg 2x,
+                     images/landscape-960.jpg 3x"
+              media="(min-width: 320px)">
       
-      
-    <img src="images/museum.jpg" alt="placeholder">
+      <source srcset="images/landscape-480.jpg ,
+                     images/landscape-960.jpg 2x,
+                     images/landscape-1440.jpg 3x"
+              media="(min-width: 480px)">
 
+      <source srcset="images/landscape-720.jpg ,
+                     images/landscape-1440.jpg 2x,
+                     images/landscape-2160.jpg 3x"
+              media="(min-width: 720px)">
+      
+      <source srcset="images/landscape-960.jpg ,
+                     images/landscape-1920.jpg 2x,
+                     images/landscape-2880.jpg 3x"
+              media=" (max-width: 959px)">
+      
+              <img src="images/museum.jpg" alt="placeholder">
+    </picture>
+      
   </header>
 </body>
 
